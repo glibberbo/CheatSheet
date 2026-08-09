@@ -1,0 +1,123 @@
+* {
+    font-family: "Red Hat Display";
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+ .overlay-text,.overlay-text2 {
+    position: absolute;
+    left: 3%;
+    color: white;
+    font-size: 3.2rem;
+    background: cornflowerblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+ }
+
+ .overlay-text {
+    top: 65%;
+}
+
+.overlay-text2 {
+    top: 78%;
+}
+
+h1 {
+    font-family: "DM Mono", "Trebuchet MS", sans-serif;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    background-color:cornflowerblue;
+
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.green {
+    background-color: aquamarine;
+}
+
+#background-banner {
+    background-image: linear-gradient(to right, aquamarine, blue);
+    width: 100%;
+    color:darkblue;
+}
+
+.image-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+#multimedia-banner {
+    background-image: linear-gradient(to right, blue, aquamarine);
+    width: 100%;
+    color:white;
+}
+
+.blue {
+    background-color:lightskyblue;
+}
+
+#table-tags {
+    background-image: linear-gradient(to right, aquamarine, blue);
+    width: 100%;
+    color:darkblue;
+}
+
+#HTML-example,
+#table-example,
+#table-example2 {
+    flex: 0 0 auto;
+    width: 600px;
+}
+
+#multimedia {
+    flex: 0 0 auto;
+    width: 250px;
+}
+
+@media (max-width: 600px) {
+
+    .overlay-text,
+    .overlay-text2 {
+        font-size: 2rem;
+        left: 5%;
+    }
+
+    .image-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #HTML-example,
+    #table-example,
+    #table-example2,
+    #multimedia {
+        width: 90%;
+    }
+}
