@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A HTML/CSS Cheatsheet</title>
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="image-container">
+        <img id="Banner" src="./resources/images/Banner.png" width="100%" height="600px">
+        <h1 class="overlay-text">Frontend Fastrack:</h1>
+        <h1 class="overlay-text2">The HTML/CSS Cheatsheet </h1>
+    </div>
+        
+
+
+<!-- HTML: Starter Tags -->
+    <h2 id="background-banner">Starter Tags: HTML</h2>
+    <p>
+
+    </p>
+    <div class="image-container2">
+        <table>
+            <thead>
+                <tr>
+                    <th class="green">Name of element</th>
+                    <th class="green">Tag</th>
+                    <th class="green">What it does!</th>
+                    <th class="green">Things to Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr> Row 1 -->
+                <tr>    
+                    <td>HTML Opening</td>
+                    <td>&lt;!DOCTYPE&gt;</td>
+                    <td>Explains that the document is written in HTML</td>
+                    <td>Entered at the top of the index.html</td>
+                </tr>
+                <!-- <tr> Row 2 -->
+                <tr>
+                    <td>Header</td>
+                    <td>&lt;head&gt;</td>
+                    <td>Stores the metadata needed to access the index.html</td>
+                    <td>Can include titles and fonts etc.</td>
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                    <td>Link</td>
+                    <td>&lt;link&gt;</td>
+                    <td>Adds links within the page (inc. CSS)</td>
+                    <td>&lt;link href= "..." rel: "stylesheet" type="text/css"&gt;</td>
+                </tr>
+                <!-- Row 4 -->
+                <tr>
+                    <td>Link Part II</td>
+                    <td>target = "_blank"</td>
+                    <td>To open link in a new window/tab</td>
+                    <td>&lt;a href="URL" target=_blank&gt;</td>
+                </tr>
+                <!-- Row 5 -->
+                <tr>
+                    <td rowspan="2">Anchor</td>
+                    <td rowspan="2">&lt a &gt</td>
+                    <td>Links to other pages/jump to a specific spot/download files</td>
+                    <td>&lt;a href="URL"&gt;</td>
+                </tr>
+                <!-- Row 6 -->
+                <tr>
+                    <td>Using an anchor tag on an image</td>
+                    <td>&lt;a href="URL"&gt   &lt img src="..."&gt;</td>
+                </tr>
+                <!-- Row 7 -->
+                <tr>
+                    <td>Unordered Lists</td>
+                    <td>&lt;ul&gt;</td>
+                    <td>Enables text to be displayed as a list</td>
+                    <td>&lt;ul&gt; then utilises a list element for text</td>
+                </tr>
+                <!-- Row 8 -->
+                <tr>
+                    <td>Ordered Lists</td>
+                    <td>&lt;ol&gt;</td>
+                    <td>Enables text to be displayed as an ordered list</td>
+                    <td>&lt;ol&gt; then utilises a list element for text</td>
+                </tr>
+                <!-- Row 9 -->
+                <tr>
+                    <td>List</td>
+                    <td>&lt;li&gt;</td>
+                    <td>Formats text as a list item</td>
+                    <td>&lt;ol&gt; or &lt;ul&gt; then utilises a list element for text</td>
+                </tr>
+                <!-- Row 10 -->
+                <tr>
+                    <td>Body</td>
+                    <td>&lt;body&gt;</td>
+                    <td>The main content of the website</td>
+                    <td>Use opening and closing tags after header</td>
+                </tr>
+                <!-- Row 11 -->
+                <tr>
+                    <td>Headings</td>
+                    <td>&lt;h1&gt;</td>
+                    <td>The titles within the webpage</td>
+                    <td>Titles can range from 1-6 (1 being the main)</td>
+                </tr>
+                <!-- Row 12 -->
+                <tr>
+                    <td>Text/Paragraphing</td>
+                    <td>&lt;p&gt;</td>
+                    <td>Text within a webpage</td>
+                    <td></td>
+                </tr>
+                <!-- Row 13 -->
+                <tr>
+                    <td>Footer</td>
+                    <td>&lt;footer&gt;</td>
+                    <td>Includes elements at the bottom of a webpage</td>
+                    <td>May include contact details, attributes, privacy policy etc.</td>
+                </tr>
+                <tr>
+                    <td>Comments</td>
+                    <td>&lt;!--comment--&gt;</td>
+                    <td>Where developer can add notes to the file</td>
+                    <td>May include sectioning, labels etc.</td>
+                </tr>
+            </tbody>
+        </table>
+            <img id="HTML-example" src="./resources/images/Examples-of-HTML.png" alt="reponsive image">
+    </div>
+    
+<!-- HTML: Multimedia Tags -->
+    <div>
+    <h2 id="multimedia-banner">Multimedia: HTML</h2>
+    <p>Inserting multimedia elements inside your webpage:</p>
+    </div>
+    <div class="image-container2">
+        <table>
+            <thead>
+                <tr>
+                    <th class="blue">Name of element</th>
+                    <th class="blue">Tag</th>
+                    <th class="blue">What it does!</th>
+                    <th class="blue">What the code looks like</th>
+                    <th class="blue">Things to Note</th>
+                </tr>
+            <thead>
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td>Images</td>
+                    <td>&lt;img&gt;</td>
+                    <td>Inserts an image or acknowledges image</td>
+                    <td>&lt;img src="url/relative path" height="..." width="..."&gt;</td>
+                    <td>Does not need a closing tag</td>
+                </tr>
+                <!-- Row 2 -->
+                <tr>
+                    <td>Video</td>
+                    <td>&lt;video&gt;</td>
+                    <td>Inserts a video into a webpage</td>
+                    <td>&lt;video src="..." controls&gt;</td>
+                    <td>Unlike images, this needs a closing tag. Also include 'Video not supported'</td>
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                    <td>Audio</td>
+                    <td>&lt;audio&gt;</td>
+                    <td>Inserts audio into a webpage</td>
+                    <td>&lt;audio src="..." controls&gt;</td>
+                    <td>Like videos, this needs a closing tag</td>
+                </tr>
+            </tbody>
+        </table>
+            <img id="multimedia" src="./resources/images/Multimedia.png" alt="responsive image">
+
+    </div>
+
+    <!-- HTML: Table Tags -->
+    <div>
+        <h2 id="table-tags">Table Tags: HTML</h2>
+        <p>Inserting table elements inside your webpage:</p>
+    </div>
+    <div class="image-container2">
+        <table>
+            <thead>
+                <tr>
+                    <th class="green">Name of element</th>
+                    <th class="green">Tag</th>
+                    <th class="green">What it does!</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td>Table</td>
+                    <td>&lt;table&gt;</td>
+                    <td>Identifies the start of a table element</td>
+                </tr>
+                <!-- Row 2 -->
+                <tr>
+                    <td>Table Head</td>
+                    <td>&lt;thead&gt;</td>
+                    <td>Defines the beginning of table</td>
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                    <td>Table Row</td>
+                    <td>&lt;tr&gt;</td>
+                    <td>Identifies the table row and should be used from the table headings</td>
+                </tr>
+                <!-- Row 4 -->
+                <tr>
+                    <td>Table Body</td>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Identifies the main body of the table</td>
+                </tr> 
+                <!-- Row 5 -->
+                <tr>
+                    <td>Table Headings</td>
+                    <td>&lt;th&gt;</td>
+                    <td>These are the headings of each row or column</td>
+                </tr>
+                <!-- Row 6 -->
+                <tr>
+                    <td>Table Data</td>
+                    <td>&lt;td&gt;</td>
+                    <td>Data contained within cells</td>
+                </tr>
+                <!-- Row 7 -->
+                <tr>
+                    <td>Table Footer</td>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Information in the footer of the table</td>
+                </tr>
+                <!-- Row 8 -->
+                <tr>
+                    <td>Merging Columns</td>
+                    <td>&lt;colspan=...&gt;</td>
+                    <td>Identify the number of columns to merge or span</td>
+                </tr>
+                <!-- Row 9 -->
+                <tr>
+                    <td>Merging Rows</td>
+                    <td>&lt;rowspan=...&gt;</td>
+                    <td>Identify the number of rows to merge or span</td>
+                </tr>
+            </tbody>
+        </table>
+            <img id="table-example" src="./resources/images/Tables.png" alt="responsive image">
+            <img id="table-example2" src="./resources/images/Examples-of-tables.png" alt="responsive image">
+    </div>
+
+<!-- CSS: Basics -->
+
+
+
+
+
+<!-- CSS: Text/Image Styling -->
+
+
+
+
+
+<!-- CSS: Positioning -->
+
+
+
+
+
+
+<!-- Troubleshooting -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
